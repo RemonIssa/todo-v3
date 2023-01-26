@@ -1,1 +1,5 @@
-<p>form works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <h2>Descrizione della task</h2>
+    <input type="text" placeholder="Descrizione" formControlName="descrizione">
+    <button type="submit">✍🏻</button>
+</form>

@@ -4,4 +4,4 @@ export interface Todo {
     completato: boolean;
 }
 
-export type Task = Omit<Todo, 'id'>
+export type Task = Omit<Todo, 'id' | 'completato'>

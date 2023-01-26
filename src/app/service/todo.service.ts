@@ -43,7 +43,8 @@ export class TodoService {
   addTask(task: Task) {
     const newTask: Todo = {
       id:this.lastId++,
-      ...task
+      ...task,
+      completato: false,
     }
 
     this.lista.push(newTask)
