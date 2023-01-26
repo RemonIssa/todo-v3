@@ -1,1 +1,9 @@
-<p>list works!</p>
+<div *ngFor="let t of list">
+    <ul>
+        <li>
+            <h4 [ngClass]="{'completato': t.completato}">{{t.descrizione}}</h4>
+            <button  (click)="toggle(t.id)">{{t.completato? '✅ Completato':'✔️ Non completato'}}</button>
+            <button (click)="delete(t.id)">❌</button>
+        </li>
+    </ul>
+</div>
